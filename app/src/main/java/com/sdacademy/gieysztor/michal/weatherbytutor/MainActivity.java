@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     TextView pressureTextView;
     TextView lastUpdatedTextView;
     TextView weatherTextView;
+
+    ImageView weatherIconImageView;
 
     BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         temperatureTextView = (TextView) findViewById(R.id.temperature);
-        pressureTextView = (TextView) findViewById(R.id.preasure);
+        pressureTextView = (TextView) findViewById(R.id.pressure);
         lastUpdatedTextView = (TextView) findViewById(R.id.last_updated);
         weatherTextView = (TextView) findViewById(R.id.weather);
 
